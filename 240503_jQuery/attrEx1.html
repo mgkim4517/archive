@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>attrEx1</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+
+  <style>
+    button {
+      background-color: #1c2975;
+      color: #fffbc0;
+      padding: 5px 10px;
+      margin-bottom: 30px;
+    }
+    
+    p {
+      background-color: #543d69;
+      color: #fff;
+      border: 3px solid #b6b6b6;
+      width: 400px;
+      padding: 5px 0;
+    }
+  </style>
+
+  <script src="../assets/jquery-3.7.1.min.js"></script>
+  <script>
+    $(function() {
+      $('.btn1').on('click', () => {
+        const src = $('img').attr('src'); // scr 속성을 읽기
+        $('p').text(src).css({ backgroundColor : '#3C6255'});
+      });
+      $('.btn2').on('click', () => {
+        const alt = $('img').attr('alt');
+        $('p').text(alt).css({ backgroundColor : '#3E4149', color: '#fff' });
+      });
+      $('.btn3').on('click', () => {
+        const wt1 = $('img').attr('width'); // width 속성이 존재하지 않기 때문에 읽지 못함
+        const wt2 = $('img').css('width');
+        $('p').text(wt2).css({ backgroundColor : '#A7727D', color : '#F4EEED' });
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <h1>attrEx1</h1>
+  <button class="btn1">경로 확인</button>
+  <button class="btn2">대체 텍스트</button>
+  <button class="btn3">이미지 가로 사이즈</button>
+
+  <img src="./images/2.jpg" alt="img" width="200">
+
+  <p>이 곳에 출력됩니다</p>
+</body>
+</html>

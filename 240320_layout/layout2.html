@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <meta charset="utf-8">
+  <title>layout</title>
+
+  <style>
+    body {
+      margin: 30px auto;
+      background-image: url(./assets/images/table.png);
+      background-repeat: repeat;
+      background-attachment: fixed;
+      width: 70vw;
+      border: 3px solid pink;
+    }
+
+    .container {
+      background-color: purple;
+      color: #fff;
+      display: flex;
+      padding: 10px;
+    }
+
+    .container img {
+      margin-left: 10px;
+    }
+
+    .title {
+      display: block;
+    }
+
+    .title h1 {
+      margin: 10px 0 0 10px;
+      font-size: 3rem;
+    }
+
+    .title p {
+      margin: 0 0 10px 10px;
+      font-size: 1.8rem;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    li a {
+      text-decoration: none;
+    }
+
+    .global_nav {
+      background-color: #ffd13b;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    .global_nav li {
+      display: inline-block;
+      width: 7vw;
+    }
+
+    .global_nav li a {
+      color: purple;
+      font-weight: bold;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px
+    }
+
+    .global_nav li a:hover {
+      background-color: #8b98e4;
+      color: #fff;
+    }
+
+    article {
+      background-color: #fff2e8;
+      width: 57vw;
+      margin: 0; padding: 0;
+      display: inline-block;
+
+      display: flex;
+      flex-wrap: wrap;
+      /* justify-content: space-between; */
+      /* align-content: space-between; */
+    }
+
+    article .box1 li, .box3 li {
+      background-color: #fff;
+      border: 2px solid red;
+      padding: 5px;
+    }
+
+    article img {
+      vertical-align: bottom;
+      width: 100%;
+    }
+
+    article p {
+      margin: 0;
+      text-align: right;
+      font-style: italic;
+      font-weight: bold;
+      color: #919191;
+    }
+
+    article ul {
+      margin: 2%;
+      width: 28.8%;
+    }
+
+    article .box2 li:nth-child(1) {
+      font-weight: bold;
+      font-size: 1.8rem;
+    }
+
+    article .box2 li:nth-child(2) {
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: red;
+      padding: 20px 0 20px 0;
+    }
+
+    article .box4 li:nth-child(1) {
+      font-weight: bold;
+      font-size: 1.8rem;
+    }
+
+    article .box4 li:nth-child(2) {
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: red;
+      padding: 20px 0 20px 0;
+    }
+
+    main {
+      display: flex;
+    }
+
+    aside {
+      background-color: #fff;
+      width: 13vw;
+      border-left: 2px solid red;
+    }
+    
+    .sub_nav {
+      padding: 0;
+    }
+    
+    .sub_nav li {
+      border-bottom: 2px solid red;
+    }
+    
+    .sub_nav li a {
+      color: #000;
+      padding: 20px;
+      display: block;
+      align-items: center;
+    }
+    
+    .sub_nav li a:hover {
+      background-color: #a6d6a5;
+      color: #fff;
+    }
+    
+    aside h2 {
+      color: red;
+      margin: 20px;
+    }
+
+    .tel p {
+      margin: 20px;
+    }
+
+    footer {
+      background-color: purple;
+      color: #fff;
+      padding: 5px 0 5px 20px;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+  </style>
+ </head>
+
+ <body>
+    <header>
+      <div class="container">
+        <img src="./assets/images/logo.png" alt="로고 이미지">
+        <div class="title">
+          <h1>Kim's Kitchen</h1>
+          <p>cooking class</p>
+        </div>
+      </div>
+      
+      <ul class="global_nav">
+        <li><a href="#">홈</a></li>
+        <li><a href="#">소개</a></li>
+        <li><a href="#">교실</a></li>
+        <li><a href="#">케이터링</a></li>
+        <li><a href="#">연락처</a></li>
+      </ul>
+    </header>
+      
+    <main>
+      <article>
+          <ul class="box1">
+            <li><img src="./assets/images/bok-choi.jpg">
+            <p>Oriental Salad</p></li>
+          </ul>
+          <ul class="box2">
+            <li>채식주의자</li>
+            <li>런던에서의 5주 코스</li>
+            <li>5주간 채식주의자 음식에 대해 소개하고 쌀과 국수 요리를 가르친다.</li>
+          </ul>
+          <ul class="box3">
+            <li><img src="./assets/images/cup.jpg">
+            <p>Teriyaki</p></li>
+          </ul>
+          <ul class="box4">
+            <li>소스 마스터클래스</li>
+            <li>1일 워크샵</li>
+            <li>1일 집중 코스에서는 다양한 요리에서 사용할 수 있는 가장 맛있는 소스를 만드는 방법을 살펴본다.</li>
+          </ul>
+      </article>
+
+      <aside>
+        <div class="sub_nav">
+          <h2>인기요리법</h2>
+          <ul class="sub_nav">
+            <li><a href="#">후라이드</a></li>
+            <li><a href="#">고추바사삭</a></li>
+            <li><a href="#">양념치킨</a></li>
+            <li><a href="#">뿌링클</a></li>
+          </ul>
+        </div>
+        <div class="tel">
+          <h2>연락처</h2>
+          <p>경기 수원시 팔달구 매산동</p>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <p>ⓒKim's Kitchen 김씨네 키친</p>
+    </footer>
+ </body>
+</html>

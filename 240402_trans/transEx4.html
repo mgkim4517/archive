@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>transEx4</title>
+
+  <style>
+    body {
+      background-color: #fff6da;
+      margin: 0;
+    }
+
+    .wrapper {
+      background-color: #fff;
+      width: 700px; height: 400px;
+      margin: 50px auto;
+      overflow: hidden;
+    }
+    
+    .wrapper .contents p {
+      padding-top: 30px;
+      font-size: 1.2rem;
+      width: 250px;
+    }
+
+    .wrapper .contents .icon img {
+      width: 30px;
+      padding-top: 30px;
+      padding-right: 40px;
+    }
+    
+    .contents {
+      display: block;
+      margin-left: 50px;
+    }
+
+    main {
+      display: flex;
+    }
+
+    .wrapper main .contents h1 {
+      margin: 0;
+      text-transform: capitalize;
+      font-style: italic;
+      border-bottom: 3px solid #000;
+      font-size: 2.3rem;
+      padding-top: 50px;
+    }
+
+    .wrapper main .panda {
+      background-color: #ddd;
+      width: 400px; height: 400px;
+      border-radius: 50%;
+      margin-left: 50px;
+      transition: 1s;
+    }
+
+    .wrapper footer p {
+      padding: 0;
+      margin-top: -30px;
+      background-color: #a1a1a1;
+      width: 300px; height: 30px;
+      line-height: 30px;
+      padding-left: 50px;
+      color: #fff;
+    }
+
+    .wrapper main .panda:hover {
+      transform: translate(20px);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <main>
+      <div class="contents">
+        <h1>name</h1>
+        <p>이름자 둘 이런 하나에 여름자를 계십니다. 이름과 잠, 별 많은 이네들은</p>
+        <div class="icon">
+          <img src="./images/home.png" alt="home">
+          <img src="./images/message.png" alt="message">
+          <img src="./images/tel.png" alt="tel">
+        </div>
+      </div>
+      <img class="panda" src="./images/1.png" alt="panda">
+    </main>
+    <footer>
+      <p>profile</p>
+    </footer>
+  </div>
+</body>
+</html>

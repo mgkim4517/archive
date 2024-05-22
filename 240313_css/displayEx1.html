@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>displayEx1</title>
+
+  <style>
+  /*
+    menu {
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    a {
+      border: 2px solid #000;
+      color: #000;
+      background-color: #cfcef8;
+      padding: 10px 20px;
+      text-decoration: none;
+    }
+
+    .gnb {
+      text-align: center;
+    }
+
+    .gnb li {
+      display: inline;
+    }
+
+    a:hover {
+      background-color: #34397e;
+      color: #ffffff;
+    }
+  */
+
+    .gnb {
+      text-align: center;
+      /* background-color: #ddd; */
+    }
+    
+    .gnb li {
+      /* background-color: #ddd; */
+      display: inline-block;
+    }
+    
+    .gnb li a {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: bold;
+      background-color: #e2ff94;
+      border: 3px solid #000;
+      color: inherit;
+      padding: 5px 10px;
+      margin: 0 5px;
+      display: block;
+    }
+    
+    .gnb li:hover a {
+      background-color: #ffd8ac;
+      color: #d69f5f;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>display 연습</h1>
+  <ul>
+    <li>마우스를 올리면 글자색과 배경색 변경</li>
+    <li>중앙 정렬</li>
+  </ul>
+
+  <menu class="gnb">
+    <li><a href="#">menu1</a></li>
+    <li><a href="#">menu2</a></li>
+    <li><a href="#">menu3</a></li>
+    <li><a href="#">menu4</a></li>
+  </menu>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>mqEx3</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  
+  <style>
+     body { margin: 0; text-align: center; font-weight: bold; }
+     .wrapper {
+      list-style: none;
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-align: center;
+      padding: 30px; margin: 0;
+      background-color: #9db1ce;
+      box-sizing: border-box;
+
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+     }
+     .wrapper .box {
+      width: calc(50% - 10px);
+      background-color: #e0eaff;
+      padding: 5px 0;
+     }
+     .wrapper .none {
+      /* opacity: 0; */
+      display: none;
+     }
+
+     @media (min-width: 768px) {
+      /* 3열 */
+      .wrapper { background-color: #f5d2dc; }
+      .wrapper .box {
+        background-color: #fbffca;
+        width: calc(33.3333% - 10px);
+      }
+      .wrapper .box:last-child { 
+        display: none;
+      }
+     }
+
+     @media (min-width: 1200px) {
+      /* 4열 */
+      .wrapper {
+        background-color: rgb(214, 236, 255);
+        padding: 50px;
+        font-size: 1.3rem;
+      }
+      .wrapper .box {
+        width: calc(25% - 10px);
+      }
+      .wrapper .box:last-child {
+        display: block;
+        background-color: #9ba8c2;
+        color: #fff;
+      }
+     }
+
+     @media (min-width: 1600px) {
+      /* 5열 */
+      .wrapper {
+        width: 90vw;
+        margin: 0 auto;
+        font-size: 2rem;
+        gap: 16px;
+      }
+      .wrapper .box {
+        width: calc(20% - 16px);
+        padding: 20px 0;
+      }
+      .wrapper .none {
+        display: block;
+      }
+     }
+  </style>
+</head>
+
+<body>
+  <ul class="wrapper">
+    <li class="box">txt1</li>
+    <li class="box">txt2</li>
+    <li class="box">txt3</li>
+    <li class="box none">txt4</li>
+    <li class="box">txt5</li>
+    <li class="box">txt6</li>
+    <li class="box">txt7</li>
+    <li class="box">txt8</li>
+    <li class="box">txt9</li>
+    <li class="box">txt10</li>
+  </ul>
+</body>
+</html>

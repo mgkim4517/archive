@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>aniEx3</title>
+
+  <style>
+    body {
+      margin: 0;
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .fireworks {
+      position: absolute;
+      top: 30px; right: 30px;
+
+      animation: fireworks 1.5s linear infinite alternate;
+    }
+
+    .wrapper {
+      animation: bike 2s linear infinite;
+    }
+
+    .wrapper .bicycle {
+      position: absolute;
+      bottom: 120px; left: 90px;
+    }
+
+    .wrapper .wheel {
+      animation: wheel .8s linear infinite;
+    }
+
+    .wrapper .wheel1 {
+      position: absolute;
+      bottom: 30px;
+    }
+
+    .wrapper .wheel2 {
+      position: absolute;
+      bottom: 30px; left: 470px;
+    }
+
+    @keyframes fireworks {
+      0% {
+        transform: scale(0.5, 0.5) rotate(360deg);
+      }
+    }
+
+    @keyframes bike {
+      0% {
+      }
+    }
+
+    @keyframes wheel {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <img src="./images/fireworks.png" alt="fireworks" class="fireworks">
+  <div class="wrapper">
+    <img src="./images/bicycle.png" alt="bicycle" class="bicycle">
+    <img src="./images/wheel.png" alt="wheel" class="wheel wheel1">
+    <img src="./images/wheel.png" alt="wheel" class="wheel wheel2">
+  </div>
+</body>
+</html>

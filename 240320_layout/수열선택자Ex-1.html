@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>수열선택자Ex</title>
+
+  <style>
+    /* 
+    마우스 이벤트
+    1, 5, 9 같은 색상
+    2, 4, 6, 8 같은 색상
+    3, 7 같은 색상
+    */
+
+    .gnb {
+      list-style: none;
+      text-align: center;
+      padding: 0; margin: 0 auto;
+      font-size: 1.2rem;
+      font-weight: bold;
+      width: 90vw;
+      /* background-color: #6b92da; */
+      
+      display: flex;
+      /* justify-content: center; */
+    }
+    
+    .gnb li {
+      width: 11.111111%;
+    }
+
+    .gnb li a {
+      text-decoration: none;
+      color: #000;
+      /* background-color: #d5f5a1; */
+      /* display: block;
+      line-height: 50px; */
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .gnb li:first-child a { /* 첫 번째 자식 li의 a */
+      border-radius: 40px 0 0 40px;
+    }
+
+    .gnb li:last-child a { /* 마지막 자식 li의 a */
+      border-radius: 0 40px 40px 0;
+    }
+
+    /* 2, 4, 6, 8 */
+    .gnb li a {
+      background-color: #ffdfdf;
+    }
+
+    .gnb li:nth-child(even) a {
+      background-color: #d0e5ff;
+    }
+
+    /* 1, 5, 9 a */
+    .gnb li:nth-child(4n+1) a {
+      background-color: #c5ffd8;
+    }
+
+    /* 3, 7 a */
+    .gnb li:nth-child(4n-1) a { /* or (4n+3) */
+      background-color: #fff9a7;
+    }
+
+    .gnb li a:hover {
+      background-color: #cdb2f8;
+      color: #fff
+    }
+
+  </style>
+</head>
+
+<body>
+  <ul class="gnb">
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#">6</a></li>
+    <li><a href="#">7</a></li>
+    <li><a href="#">8</a></li>
+    <li><a href="#">9</a></li>
+  </ul>
+</body>
+</html>

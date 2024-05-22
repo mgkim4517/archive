@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>animateEx2</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+
+  <style>
+    ul { list-style: none; margin: 0; padding: 0; }
+    img { width: 100%; vertical-align: bottom; }
+
+    .container {
+      width: 80vw;
+      min-width: 400px;
+      /* height: 400vh; || aspect-ratio: 2 / 1; 이미지 크기가 모두 동일하지 않을 때 + (img에 object-fit) */
+      margin: 50px auto;
+      border: 3px solid #272727;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .container .btn-group {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      z-index: 9999;
+    }
+
+    .container .btn-group li {
+      text-indent: -9999px;
+      background-color: rgba(255, 255, 255, 0.4);
+      width: 20px; height: 20px;
+      margin: 7px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .container .btn-group li:hover {
+      background-color: rgba(255, 255, 255, 0.7);
+    }
+
+    .container .img-group {
+      display: flex;
+      outline: 3px solid rgba(255, 0, 0, 0.5);
+      width: 400%; /* img 개수 * 100 / 부모인 .container의 4배 */
+      position: relative;
+    }
+
+    .container .img-group li {
+      width: 25%; /* 부모인 ul을 기준으로 1/4을 차지해야 함 / img가 4개니까 1/4 해서 25% */
+    }
+  </style>
+
+  <script src="../assets/jquery-3.7.1.min.js"></script>
+  <script src="../assets/jquery-ui.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <ul class="btn-group">
+      <li>첫 번째 이미지 버튼</li>
+      <li class="second">두 번째 이미지 버튼</li>
+      <li>세 번째 이미지 버튼</li>
+      <li>네 번째 이미지 버튼</li>
+    </ul>
+    <ul class="img-group">
+      <li><img src="./images/1.jpg" alt="img1"></li>
+      <li><img src="./images/2.jpg" alt="img2"></li>
+      <li><img src="./images/3.jpg" alt="img3"></li>
+      <li><img src="./images/4.jpg" alt="img4"></li>
+    </ul>
+  </div>
+
+  <script>
+  /*
+    $('.btn-group li').eq(0).on('click', () => {
+      // $('.img-group').animate({ left : 0 }, 300, 'linear' );
+      $('.img-group').animate({ marginLeft: 0 }, 300, 'linear' );
+    });
+
+    $('.btn-group li').eq(1).on('click', () => {
+      $('.img-group').animate({ marginLeft : '-100%' }, 300, 'linear' );
+    });
+
+    $('.btn-group li').eq(2).on('click', () => {
+      $('.img-group').animate({ marginLeft : '-200%' }, 300, 'linear' );
+    });
+
+    $('.btn-group li').eq(3).on('click', () => {
+      $('.img-group').animate({ marginLeft : '-300%' }, 300, 'linear' );
+    });
+  */
+
+  $('.btn-group li').on('click', (e) => {
+    const idx = $(e.target).index();
+    console.log(idx);
+    // $('.img-group').animate({ marginLeft : -containerWt * idx + '%' }, 300, 'linear');
+    const containerWt = $('.container').width(); // width() = px로 반환
+    console.log(containerWt);
+    $('.img-group').animate({ marginLeft : -containerWt * idx + 'px' }, 300, 'linear');
+  });
+  </script>
+</body>
+</html>

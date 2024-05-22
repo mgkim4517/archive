@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>background-image+repeat</title>
+
+  <style>
+    body { 
+      background-image: url(./assets/images/header.gif);
+      background-repeat: repeat-x;
+    }
+
+    p { /* 배경 이미지의 기본값은 반복 */
+      background-image: url(./assets/images/more-leaves.png);
+      padding: 20px;
+    }
+
+    /* p:last-child */
+    /* p:last-of-child */
+    /* p:nth-child(5) */
+    p:nth-of-type(2) {
+      background-size: 20px;
+
+      background-color: #feffd1;
+      background-repeat: repeat; /* 반복. 기본값 */
+      background-repeat: repeat-y; /* y축 반복 */
+      background-repeat: repeat-x; /* x축 반복 */
+      background-repeat: no-repeat; /* 반복 없음 */
+    }
+  </style>
+</head>
+
+<body>
+  <h1>배경이미지</h1>
+  <h2>background-image</h2>
+  <p>국회의원은 현행범인인 경우를 제외하고는 회기중 국회의 동의없이 체포 또는 구금되지 아니한다. 이 헌법은 1988년 2월 25일부터 시행한다. 다만, 이 헌법을 시행하기 위하여 필요한 법률의 제정·개정과 이 헌법에 의한 대통령 및 국회의원의 선거 기타 이 헌법시행에 관한 준비는 이 헌법시행 전에 할 수 있다.</p>
+  <h2>background-repeat</h2>
+  <p>대통령으로 선거될 수 있는 자는 국회의원의 피선거권이 있고 선거일 현재 40세에 달하여야 한다. 모든 국민의 재산권은 보장된다. 그 내용과 한계는 법률로 정한다. 국회는 국무총리 또는 국무위원의 해임을 대통령에게 건의할 수 있다. 공무원인 근로자는 법률이 정하는 자에 한하여 단결권·단체교섭권 및 단체행동권을 가진다.</p>
+</body>
+</html>

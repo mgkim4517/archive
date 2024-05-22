@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+/***** header *****/
+.container header h1 {
+  color: #fff;
+  font-family: "Protest Riot", Georgia, 'Times New Roman', Times, serif;
+  background: #7d1e6a url(./assets/images/logo.png) no-repeat 25px 50% / 90px;
+  font-size: 33px;
+  height: 130px;
+  padding: 30px 0 0 130px;
+  line-height: 1;
+}
+
+.container header h1 em {
+  font-family: "Norican", Georgia, Times, 'Times New Roman', cursive;
+  font-size: 36px;
+  display: block;
+}
+
+.container header .global_menu {
+  background-color: #ffcd38;
+  color: #7d1e6a;
+  font-weight: 500;
+  display: flex;
+}
+
+.container header .global_menu li a {
+  display: block;
+  width: 100px; height: 46px;
+  text-align: center;
+  line-height: 46px;
+}
+
+.container header .global_menu li a:hover {
+  background-color: #e4010b;
+  color: #fff;
+}

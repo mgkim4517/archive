@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>gridBasic1</title>
+
+  <style>
+    /*
+      grid : row(행) / column(열)
+      grid-container 속성 : grid-template, grid-area, gap, justify-content, align-item...
+      grid-item 속성 : grid-row, grid-column, justify-self, align-self...
+    */
+
+    body { font-weight: bold; font-size: 1.2rem; }
+    .container { width: 90%; margin: 50px auto; border: 6px solid #000; }
+    .container .item { background-color: #d0e2cb; margin: 4px; }
+
+    .box1 {
+      display: grid;
+      /* 행 row */
+      /* 1행 2행 3행 4행의 높이(세로)값 */
+      grid-template-rows: 100px 200px 150px 50px;
+      /* 부모 요소의 높이 값이 지정되어 있지 않으면 아이템끼리 상대 비율로 적용 */
+      grid-template-rows: 20% 20% 40% 40%;
+      /* 1행 2행 3행만 적용되고 4행은 기본값 */
+      grid-template-rows: 10vw 15vw 25vw;
+      /* 1행 2행만 적용되고 3행 4행은 기본값 */
+      grid-template-rows: 10vh 6rem;
+      grid-template-rows: 1fr 2fr 2fr 3fr;
+      /* 
+        fr(fraction) 비율, 분수
+          1행: 1/8
+          2행: 2/8
+          3행: 2/8
+          4행: 3/8
+      */
+    }
+
+      .box2 {
+        display: grid;
+        /* 열 column */
+        /* 1열 2열 3열 4열의 너비(가로)값 */
+        grid-template-columns: 100px 200px 150px 50px;
+        /* 2열 */
+        grid-template-columns: 30vh 10em;
+        /* 3열 */
+        grid-template-columns: 50% 150px 10vw;
+        /* 1열 1fr = 100% */
+        grid-template-columns: 1fr;
+        /* 1열 50%만 채움 */
+        grid-template-columns: 50%;
+        /* 2열 50%씩 */
+        grid-template-columns: 1fr 1fr;
+        /* 4열 Nfr/7 */
+        grid-template-columns: 2fr 3fr 1fr 1fr;
+      }
+
+      .box3 {
+        display: grid;
+        /* 3행 3열 */
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        /* 100px 뺀 나머지로 fr 적용 */
+        grid-template-columns: 1fr 2fr 100px 1fr;
+      }
+  </style>
+</head>
+
+<body>
+  <h1>gridBasic</h1>
+  <p>2차원(행row과 열column)의 레이아웃 시스템으로 부모 요소(grid container)와 자식 요소(grid item)으로 구성되어 있다.</p>
+  <a href="https://developer.mozilla.org/ko/docs/Learn/CSS/CSS_layout/Grids" target="_blank">MDN Grid</a>
+
+  <div class="container box1">
+    <div class="item">item1</div>
+    <div class="item">item2</div>
+    <div class="item">item3</div>
+    <div class="item">item4</div>
+  </div>
+  <div class="container box2">
+    <div class="item">item1</div>
+    <div class="item">item2</div>
+    <div class="item">item3</div>
+    <div class="item">item4</div>
+  </div>
+  <div class="container box3">
+    <div class="item">item1</div>
+    <div class="item">item2</div>
+    <div class="item">item3</div>
+    <div class="item">item4</div>
+  </div>
+</body>
+</html>

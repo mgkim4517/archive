@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>before+after</title>
+
+  <style>
+    p {
+      border: 1px solid #000;
+    }
+
+    p::before {
+      content: "설명 : "; /* 생략 불가능. ""을 비워둘 순 있음 */
+      background-color: #f7ffc9;
+      padding: 4px;
+    }
+
+    p::after {
+      content: "";
+      background-color: #c9fffc;
+    }
+
+    ol .box1::before {
+      content: "https://www.google.com : ";
+    }
+
+    ol .box2::before {
+      content: "https://www.naver.com : ";
+      background-color: #d1ffd7;
+      margin-right: 20px;
+      padding-right: 20px;
+    }
+
+    ol .box3::before {
+      content: "https://www.kakao.com 주소: ";
+      display: block;
+      background-color: #ddd;
+      border-right: 3px solid #ffbac2;
+      width: 50%;
+    }
+
+    ul .box1::after {
+      content: "";
+      display: inline-block;
+      width: 6px; height: 14px;
+      background-color: #b2a0ff;
+    }
+
+    ul .box2::after {
+      content: "🐱";
+    }
+
+    ul .box3::after {
+      content: "&lt"; /* 값으로 작성되는 부분 ""은 텍스트 콘텐츠의 영역을 코드값 적용 X */
+    }
+  </style>
+</head>
+
+<body>
+  <h2>:before, ::before</h2>
+  <p>기준 요소 안의 콘텐츠 영역 앞쪽에 적용. 의사 요소</p>
+  <ol>
+    <li class="box1">구글</li>
+    <li class="box2">네이버</li>
+    <li class="box3">카카오</li>
+  </ol>
+
+  <h2>:after, ::after</h2>
+  <p>기준 요소 안의 콘텐츠 영역 뒤쪽에 적용</p>
+  <ul>
+    <li class="box1">구글</li>
+    <li class="box2">네이버</li>
+    <li class="box3">카카오</li>
+  </ul>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>slideEx1</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+
+  <style>
+    body { margin: 0; padding: 0; }
+    .box {
+      width: 100%; height: 400px;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .box ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .box .bg-box {
+      /* display: flex; */
+    }
+    
+    .box .bg-box li {
+      height: 400px;
+      font-size: 5rem;
+      font-weight: bold;
+      color: #fff;
+      text-align: center;
+      line-height: 400px;
+    }
+
+    .box .bg-box .item1 { background-color: #D2E9E9; }
+    .box .bg-box .item2 { background-color: #C9CCD5; }
+    .box .bg-box .item3 { background-color: #eec7d4; }
+    .box .bg-box .item4 { background-color: #ece0c2; }
+
+    .box .btn-group {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: absolute;
+      top: 50%;
+      width: 100%;
+    }
+    
+    .box .btn-group li {
+      background-color: rgba(255, 255, 255, 0.7);
+      width: 30px; height: 30px;
+      text-align: center;
+      line-height: 25px;
+      font-size: 1.8rem;
+      cursor: pointer;
+      font-weight: bold;
+      color: #8f8f8f;
+    }
+  </style>
+  <script src="../assets/jquery-3.7.1.min.js"></script>
+  <script src="../assets/jquery-ui.min.js"></script>
+</head>
+
+<body>
+  <div class="box">
+    <ul class="btn-group">
+      <li>&lt;</li>
+      <li>&gt;</li>
+    </ul>
+    <ul class="bg-box">
+      <li class="item1">bg1</li>
+      <li class="item2">bg2</li>
+      <li class="item3">bg3</li>
+      <li class="item4">bg4</li>
+    </ul>
+  </div>
+
+  <script>
+    const boxChange = () => $('.bg-box li').first().appendTo('.bg-box');
+    setInterval(boxChange, 2000);
+
+    $('.btn-group li').first().on('click', () => {
+      $('.bg-box li:last-child').prependTo('.bg-box');
+    });
+
+    $('.btn-group li').last().on('click', () => {
+      $('.bg-box li:first-child').appendTo('.bg-box');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>미디어쿼리선언방식</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+
+  <!-- 내부 선언 -->
+  <style>
+    /* 모바일 기준 */
+      h1 {
+        background-color: #580000;
+        color: #fff;
+        height: 14vh;
+      }
+      h2 {
+        background-color: #9e1313;
+        color: #fff;
+        height: 14vh;
+      }
+      .box1 {
+        background-color: #e76969;
+        color: #000;
+        height: 24vh;
+      }
+      .box2 {
+        background-color: #e99191;
+        color: #000;
+        height: 24vh;
+      }
+      .box3 {
+        background-color: #ffc4c4;
+        color: #000;
+        height: 24vh;
+      }
+
+      h1, h2 {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      body {
+        margin: 0;
+      }
+      h1, h2, .box {
+        text-align: center;
+      }
+
+    /* 768px */
+    @media (min-width: 768px) {
+      h1 {
+        background-color: #00471b;
+        color: #fff;
+        height: 14vh;
+      }
+      h2 {
+        background-color: #127237;
+        color: #fff;
+        height: 14vh;
+      }
+      .box1 {
+        background-color: #52af76;
+        color: #000;
+        height: 24vh;
+      }
+      .box2 {
+        background-color: #76cc98;
+        color: #000;
+        height: 24vh;
+      }
+      .box3 {
+        background-color: #9ff1bf;
+        color: #000;
+        height: 24vh;
+      }
+
+      h1, h2 {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      body {
+        margin: 0;
+      }
+      h1, h2, .box {
+        text-align: center;
+      }
+      .box {
+        width: 80vw;
+        margin: 0 auto;
+      }
+    }
+    /* 1200px */
+    @media (width >= 1200px) {
+      h1 {
+        background-color: #00054b;
+        color: #fff;
+        height: 14vh;
+      }
+      h2 {
+        background-color: #212883;
+        color: #fff;
+        height: 14vh;
+      }
+      .box1 {
+        background-color: #42489e;
+        color: #000;
+        height: 24vh;
+      }
+      .box2 {
+        background-color: #797fd3;
+        color: #000;
+        height: 24vh;
+      }
+      .box3 {
+        background-color: #afb4f3;
+        color: #000;
+        height: 24vh;
+      }
+
+      h1 {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h2 {
+        display: none;
+      }
+      body {
+        margin: 0;
+      }
+      h1, h2, .box {
+        text-align: center;
+      }
+      .box {
+        width: 80vw;
+        margin: 0 auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>미디어쿼리 <strong>선언 방식</strong></h1>
+  <h2>내부 선언과<br>외부선언</h2>
+  <div class="box box1">box1</div>
+  <div class="box box2">box2</div>
+  <div class="box box3">box3</div>
+</body>
+</html>

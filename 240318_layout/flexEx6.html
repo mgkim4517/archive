@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>flexEx6</title>
+
+  <style>
+    body {
+      margin: 0;
+      text-align: center;
+    }
+
+    header { /* flex-container */
+      display: flex;
+      background-color: #cac1ff;
+    }
+
+    header h1 { /* flex-item / flex-container */
+      background-color: rgb(255, 229, 196);
+      color: rgb(192, 155, 192);
+      margin: 0;
+      font-size: 2.5rem;
+      /* width: 10vw; */
+      width: 7rem; height: 5rem;
+      /* aspect-ratio: 2 / 1; */
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    header form { /* flex-item / flex-container */
+      /* background-color: #cac1ff; */
+      display: flex;
+      align-items: center;
+      padding-left: 10px;
+
+      /* width: calc(1005 - 7rem - 5rem); */
+
+    }
+
+  /* header form * { form 하위 요소 각각에 적용 */
+    header form [type] { /* flex-item */
+      outline: none;
+      font-size: 1.3rem;
+      font-family: '나눔고딕', '맑은 고딕', '돋움', sans-serif;
+      border: 1px solid #000;
+      height: 40px;
+      padding: 0 10px;
+    }
+
+    header form button[type=submit] {
+      border-left: none;
+      width: 80px;
+      cursor: pointer;
+    }
+
+    header form button[type=submit]:hover {
+      background-color: #000;
+      color: #fff;
+    }
+
+    header nav {
+      background-color: rgb(202, 255, 211);
+      width: 5rem;
+      font-size: 2rem;
+      font-weight: bold;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      margin-left: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <header> <!-- flex-container -->
+    <h1> <!-- flex-item / flex-container -->
+      로고 <!-- flex-item -->
+    </h1>
+    <form> <!-- flex-item -->
+      <input type="search" autofocus placeholder="검색어를 입력하세요">
+      <button type="submit">검색</button>
+    </form>
+    <nav>메뉴</nav> <!-- flex-item -->
+  </header>
+</body>
+</html>

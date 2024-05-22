@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>slideUpDownEx2</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <link rel="stylesheet" href="../assets/styles/reset.css">
+  <style>
+    .side-menu {
+      background-color: #faf8e4;
+      width: 250px;
+      text-transform: capitalize;
+      letter-spacing: 1px;
+    }
+    
+    .side-menu h3 {
+      background-color: #719751;
+      color: #fff;
+      padding: 6px 10px;
+      cursor: pointer;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+    }
+
+    .side-menu h3:hover {
+      background-color: #55723e;
+    }
+
+    .side-menu p {
+      padding: 10px 10px 30px;
+      text-align: center;
+      display: none;
+    }
+  </style>
+  <script src="../assets/jquery-3.7.1.min.js"></script>
+  <script>
+    $(function() {
+      /* 첫 번째 제목을 클릭하면 첫 번째 p가 내려가고 다른 p는 모두 올라감 */
+    /*
+      $('.side-menu li').eq(0).children('h3').on('click', () => {
+        $('.side-menu li').eq(0).children('p').slideToggle();
+        $('.side-menu li').eq(1).children('p').slideUp();
+        $('.side-menu li').eq(2).children('p').slideUp();
+        $('.side-menu li').eq(3).children('p').slideUp();
+      });
+      $('.side-menu li').eq(1).children('h3').on('click', () => {
+        $('.side-menu li').eq(1).children('p').slideToggle();
+        $('.side-menu li').eq(0).children('p').slideUp();
+        $('.side-menu li').eq(2).children('p').slideUp();
+        $('.side-menu li').eq(3).children('p').slideUp();
+      });
+      
+      $('.side-menu h3').on('click', (e) => {
+        $('.side-menu p').slideUp();
+        // 내가 클릭한 바로 그 h3의 바로 뒤 형제
+        $(e.target).next('p').slideToggle();
+      });
+      */
+
+      $('.side-menu h3').on('click', (e) => {
+        $(e.target).next('p').slideToggle().parent().siblings().find('p').slideUp();
+      });
+      
+      // 1. 전부 닫고 내가 클릭한 것만 오픈
+      // 2. method chaning으로 클릭한 것 외 닫기
+    });
+  </script>
+</head>
+
+<body>
+  <ul class="side-menu">
+    <li role="button"> <!-- 버튼 역할을 한다는 것을 알려 줌 -->
+      <h3>Menu1</h3>
+      <p>Menu1 Menu1 Menu1 Menu1 Menu1 Menu1 Menu1 Menu1 Menu1 Menu1 Menu1 Menu1 Menu1 Menu1 Menu1 Menu1 Menu1 Menu1 Menu1 Menu1</p>
+    </li>
+    <li role="button">
+      <h3>Menu2</h3>
+      <p>Menu2 Menu2 Menu2 Menu2 Menu2 Menu2 Menu2 Menu2 Menu2 Menu2 Menu2 Menu2 Menu2 Menu2 Menu2 Menu2 Menu2 Menu2 Menu2 Menu2</p>
+    </li>
+    <li role="button">
+      <h3>Menu3</h3>
+      <p>Menu3 Menu3 Menu3 Menu3 Menu3 Menu3 Menu3 Menu3 Menu3 Menu3 Menu3 Menu3 Menu3 Menu3 Menu3 Menu3 Menu3 Menu3 Menu3 Menu3</p>
+    </li>
+    <li role="button">
+      <h3>Menu4</h3>
+      <p>Menu4 Menu4 Menu4 Menu4 Menu4 Menu4 Menu4 Menu4 Menu4 Menu4 Menu4 Menu4 Menu4 Menu4 Menu4 Menu4 Menu4 Menu4 Menu4 Menu4 </p>
+    </li>
+  </ul>
+</body>
+</html>

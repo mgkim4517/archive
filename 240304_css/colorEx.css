@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+#t1 {
+  color: #D63484;
+}
+#t1 {
+  background-color: white;
+}
+
+#t2 {
+  color: #7F27FF;
+}
+#t2 {
+  background-color: white;
+}
+
+#t3 {
+  color: #40A2E3;
+}
+#t3 {
+  background-color: white;
+}
+
+#t4 {
+  color: #8CB9BD
+}
+#t4 {
+  background-color: white;
+}
+
+body {
+  background-color:#DCFFB7;
+}
+
+/* background-color는 전부 같은 색이니까
+#h2 {
+  background-color
+ }
+ 이렇게 묶을 수 있음 */

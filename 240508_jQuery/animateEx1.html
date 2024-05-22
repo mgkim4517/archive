@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>animateEx1</title>
+
+  <style>
+    .box {
+      background-color: #FEFDCA;
+      width: 100px; height: 100px;
+      color: #52616B;
+      font-weight: bold;
+      position: relative;
+    }
+
+    #btn1, #btn2 {
+      width: 100px; height: 40px;
+      border: 3px solid #272727;
+      background-color: #fff;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <script src="../assets/jquery-3.7.1.min.js"></script>
+  <script src="../assets/jquery-ui.min.js"></script>
+</head>
+
+<body>
+  <button id="btn1">왼쪽</button>
+  <button id="btn2">오른쪽</button>
+
+  <div class="box">애니메이션</div>
+
+  <script>
+    $('#btn1').on('click', () => {
+      $('.box').animate({ 'left' : '-=50px' });
+    });
+
+    $('#btn2').on('click', () => {
+      $('.box').animate({ 'left' : '+=50px' });
+    });
+
+    // https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/keyCode
+    // (e.key === 'enter') || (e.key === 13)
+    // 키보드 방향키로 버튼 대신 좌우 움직이기
+    $(document).keydown( (e) => {
+      switch (e.key) {
+        case "ArrowLeft" :
+        $('.box').animate({ 'left' : '-=50px' });
+          break;
+        case "ArrowRight" :
+        $('.box').animate({ 'left' : '+=50px' });
+          break;
+      }
+    });
+  </script>
+</body>
+</html>

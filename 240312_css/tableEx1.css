@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+body {
+  text-align: center;
+}
+
+table {
+  margin: 1px auto;
+  border-collapse: collapse;
+}
+
+table td {
+  border: 2px solid #222;
+  padding: 20px;
+  background-color: bisque;
+}
+
+.box1 {
+  background-color: #fff;
+}
+
+.box2 {
+  background-color: #fff;
+}
+
+tr.box3 td {
+  background-color: paleturquoise;
+}

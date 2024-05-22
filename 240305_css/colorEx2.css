@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+h1 {
+  color: rosybrown;
+  background-color: teal;
+}
+
+h2 {
+  color: darkred;
+}
+
+p {
+  color: blue;
+}

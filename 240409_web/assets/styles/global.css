@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+/* header
+@import url();
+*/
+
+/******* common *******/
+body {
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  /* 한글 단어 기준으로 줄바꿈 */
+  word-break: break-all;
+  overflow-wrap: break-word;
+}
+
+.flex-wrapper {
+  display: flex;
+  align-items: center;
+
+}
+
+.main-title {}
+
+.main-des {}
+
+.ghost-btn {
+  border: 3px solid #fff;
+}
+
+.more-btn {
+  background-color: #f18d00;
+  color: #fff;
+}
+
+/******* header *******/
+header {
+  position: fixed;
+  border-bottom: 1px solid rgba(255,255,255,0.7);
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+  color: #fff;
+}
+
+header .header-wrapper {
+  background-color: orange;
+  max-width: 1900px;
+  min-width: 1200px;
+  margin: 0 auto;
+  height: 100px;
+}
+
+header .header-wrapper .logo {
+  width: 204px; height: 100%;
+  background: url(../images/logo.png) no-repeat 0 50% / contain;
+  text-indent: -9999px;
+  margin: 0 60px;
+  margin: 0 3.15789%;
+}
+
+header .header-wrapper .global-nav {}
+
+header .header-wrapper .global-utill {}
+
+
+/******* footer *******/

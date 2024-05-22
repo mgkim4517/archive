@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <meta charset="utf-8">
+  <title>웹 페이지의 탭 부분</title>
+ </head>
+
+ <body>
+   브라우저에서 보여지는 부분
+ </body>
+</html>

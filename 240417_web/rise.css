@@ -1,0 +1,421 @@
+@charset "utf-8";
+
+body {
+  font-family: 'Pretendard', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+header h1 img {
+  width: 90px;
+}
+
+header p img {
+  width: 20px;
+}
+
+header {
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 30px;
+  position: fixed;
+  vertical-align: top;
+  z-index: 9999;
+  height: 50px;
+  align-items: center;
+}
+
+.main {
+  background: url(./images/main1.jpg) no-repeat 50% /cover;
+  padding: 50px 0;
+  width: 100%; height: 75vh;
+  position: relative;
+}
+
+.main .title {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  width: 100%; height: 100%;
+  display: block;
+  align-content: center;
+  text-align: center;
+}
+
+.main .title h2 {
+  font-size: 2.2rem;
+}
+
+.main .title p{
+  font-size: 1.5rem;
+}
+
+.main .title p:first-of-type {
+  padding: 20px 0;
+}
+
+.main .title p strong {
+  font-size: 2.2rem;
+}
+
+.container1 {
+  background-color: #F5F2E4;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.container1 ul li {
+  display: block;
+  padding: 30px 0;
+}
+
+.container1 ul li img {
+  width: 62px;
+}
+
+.container1 ul li h3 {
+  font-size: 1.4rem;
+  color: #CAA179;
+  padding: 10px;
+}
+
+.container2 {
+  padding: 70px 0;
+}
+
+.container2 .logistics1 img {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.container2 .logistics1 h2 {
+  color: #383879;
+  font-size: 2rem;
+  padding: 20px 0 0 20px;
+}
+
+.container2 .logistics1 p {
+  padding: 30px 0 40px 20px;
+  font-size: 0.95rem;
+}
+
+.container2 .logistics1 a {
+  border: 1px solid #000;
+  padding: 10px 20px;
+  margin-left: 20px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.container2 .logistics2 img {
+  width: 100%;
+  padding-top: 50px;
+}
+
+.container2 .logistics2 h2 {
+  color: #383879;
+  font-size: 2rem;
+  padding: 200px 0 0 20px;
+}
+
+.container2 .logistics2 p {
+  padding: 30px 0 40px 20px;
+  font-size: 0.95rem;
+}
+
+.container2 .logistics2 a {
+  border: 1px solid #000;
+  padding: 10px 20px;
+  margin-left: 20px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.service {
+  padding-top: 100px;
+}
+
+.service h2 {
+  color: #383879;
+  font-size: 2rem;
+  font-family: "Jost",  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.service ul .el {
+  background: url(./images/s1.jpg) no-repeat 50% / cover;
+  width: 90vw; height: 85vw;
+  border-radius: 15px;
+  display: flex;
+  margin: 20px auto;
+  position: relative;
+}
+
+.service ul .ml {
+  background: url(./images/s2.jpg) no-repeat 50% / cover;
+  width: 90vw; height: 85vw;
+  border-radius: 15px;
+  display: flex;
+  margin: 30px auto;
+  position: relative;
+}
+
+.service ul .al {
+  background: url(./images/s3.jpg) no-repeat 50% / cover;
+  width: 90vw; height: 85vw;
+  border-radius: 15px;
+  display: flex;
+  margin: 30px auto;
+  position: relative;
+}
+
+.service ul .el p, .service ul .ml p, .service ul .al p {
+  width: 100%; height: 100%;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.service ul .el h3, .service ul .ml h3, .service ul .al h3 {
+  font-family: "Jost",  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  position: absolute;
+  bottom: 15px; left: 20px;
+}
+
+.container3 {
+  background-color: #F5F2E4;
+  margin-top: 100px;
+  padding: 100px 0;
+}
+
+.container3 ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+}
+
+.container3 ul li {
+  padding-bottom: 30px;
+}
+
+.container3 ul li h3 {
+  font-family: "Jost",  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #CAA179;
+  font-size: 4rem;
+}
+
+.container4 {
+  background: url(./images/rise.jpg) 50% / cover;
+  width: 100%; height: 120vw;
+  position: relative;
+}
+
+.container4 .title {
+  color: #fff;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%; height: 100%;
+  display: block;
+  align-content: center;
+  background-color: rgba(28, 28, 51, 0.65);
+}
+
+.container4 .title h3 {
+  font-size: 2.2rem;
+  padding: 20px 0 40px 0;
+}
+
+.container4 .title h3 strong {
+  font-size: 3.4rem;
+}
+
+.container4 .title p {
+  padding: 5px;
+}
+
+.container4 .title p:last-of-type {
+  margin-bottom: 50px;
+}
+
+.container4 .title a {
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+.partners {
+  color: #383879;
+  font-size: 2rem;
+  font-family: "Jost",  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  text-align: center;
+  padding: 100px 0;
+  
+}
+
+.partners .partners-logo img {
+  width: 150px;
+}
+
+.partners .partners-logo {
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  place-items: center;
+}
+
+.partners .partners-logo .cosrx {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.partners .partners-logo .nature {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.partners .partners-logo .lotte {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+.touch {
+  background-color: #F8F9FA;
+  padding-top: 80px;
+}
+
+.touch h2 {
+  color: #383879;
+  font-size: 2rem;
+  font-family: "Jost",  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.touch ul {
+  text-align: center;
+}
+
+.touch ul li h4 {
+  font-family: "Jost",  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 1.2rem;
+  padding: 30px 0 10px 0;
+}
+
+.touch ul li p {
+  color: #8B8B8B;
+}
+
+.touch .location-kakao {
+  background-color: #ddd;
+  width: 90vw; height: 600px;
+  margin: 0 auto;
+  aspect-ratio: 3 / 1;
+  margin: 70px auto;
+}
+
+.touch .location-kakao #map {
+  aspect-ratio: 3 / 1;
+  width: 90vw; height: 600px;
+}
+
+.wrapper {
+  background-color: #36366A;
+  color: #fff;
+  padding-bottom: 100px;
+}
+
+.wrapper h2 {
+  font-size: 3rem;
+  text-align: center;
+  padding: 100px 0 50px 0;
+}
+
+.wrapper ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.wrapper ul .box5 {
+  padding-bottom: 20px;
+}
+
+.wrapper ul .box5 #textBox {
+  width: 90vw;
+  background-color: #E4E4F1;
+}
+
+.wrapper ul .box1 #user_company, .wrapper ul .box2 #user_name, .wrapper ul .box3 #user_tel, .wrapper ul .box4 #user_email {
+  width: calc(46vw - 25px); height: 40px;
+  background-color: #E4E4F1;
+}
+
+.wrapper ul .box5 h3 {
+  font-weight: 300;
+  font-size: 0.8rem;
+  padding-bottom: 10px;
+}
+
+.wrapper ul .box1 h3, .wrapper ul .box2 h3, .wrapper ul .box3 h3, .wrapper ul .box4 h3, .wrapper ul .box5 h3 strong {
+  font-weight: 500;
+  font-size: 1rem;
+  padding-bottom: 10px;
+}
+
+.wrapper .file-box {
+  padding: 0 0 20px 20px;
+}
+
+.wrapper .file-box h3 {
+  padding-bottom: 10px;
+  font-weight: 500;
+}
+
+.wrapper .check {
+  padding-left: 30px;
+}
+
+.wrapper .check p {
+  padding: 10px 0 10px 8px;
+}
+
+.wrapper .btn {
+  background-color: #F5F2E4;
+  color: #4D4D4D;
+  border-radius: 10px;
+  width: 90vw;
+  height: 70px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: 70px;
+  font-weight: 700;
+}
+
+footer {
+  background-color: #212529;
+  color: #868686;
+  text-align: center;
+  padding: 30px 0;
+  margin-bottom: 40px;
+}
+
+footer address {
+  font-style: normal;
+  font-size: 0.9rem;
+}
+
+footer address p {
+  padding: 3px 0;
+}

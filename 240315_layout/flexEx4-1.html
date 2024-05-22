@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>flexEx4</title>
+
+  <style>
+    body {
+      margin: 0;
+    }
+/*
+    .wrapper {
+      display: flex;
+      align-items: flex-end;
+      height: 100vh;
+
+    }
+
+    .wrapper footer {
+      background-color: rgb(242, 255, 182);
+      width: 1400px; 1400/1900*100 
+      width: 73.684vw;
+      margin: 0 auto;
+      padding: 1vw 2vw;
+      box-sizing: border-box;  // width 기준 (border+padding) 
+    }
+
+    .wrapper footer h2 {
+      margin: 0;
+    }
+*/
+
+    .wrapper {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+    }
+
+    .wrapper footer {
+      background-color: rgb(213, 255, 203);
+      width: 73.384vw;
+      /* margin: 0 auto; */
+      padding: 1vw 2vw;
+      box-sizing: border-box;
+
+      /* align-self: flex-end; 플랙스 아이템에 직접 적용 */
+
+      /* 플랙스 아이템에 직접 적용
+    margin을 통해 개별적으로 위치 지정 가능. 더 섬세하게 조정 가능 
+      */
+
+    /* margin: auto; center center */
+    /* margin-left: auto; 여백이 왼쪽으로 들어가기 때문에 아이템은 오른쪽 배치 */
+    /* margin-right: auto; 여백이 오른쪽으로 들어가기 때문에 아이템은 왼쪽 배치 */
+    /* margin-bottom: auto; 여백이 아래쪽으로 들어가기 때문에 아이템은 위쪽 배치 */
+    /* margin-top: auto; 여백이 위쪽으로 들어가기 때문에 아이템은 아래쪽 배치 */
+
+    margin: 5rem auto 2rem;
+    margin: auto auto 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper"> <!-- flex contrainer -->
+    <footer> <!-- flex item -->
+      <h2>footer</h2>
+      <p>모든 국민은 사생활의 비밀과 자유를 침해받지 아니한다. 법관이 중대한 심신상의 장해로 직무를 수행할 수 없을 때에는 법률이 정하는 바에 의하여 퇴직하게 할 수 있다.</p>
+    </footer>
+  </div>
+</body>
+</html>

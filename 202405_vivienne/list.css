@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+/***** 상품 리스트 *****/
+/*-- 메인 상품 리스트 --*/
+.main-products, .sub-products {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.main-products {
+  padding-top: 65px;
+}
+
+.main-products ul li h3 {
+  font-family: 'Abhaya Libre', Georgia, 'Times New Roman', Times, serif;
+  font-weight: 800;
+  font-size: 16px;
+  padding-top: 10px;
+  color: #272727;
+}
+
+.main-products ul li p {
+  font-size: 12px;
+  padding-top: 5px;
+  padding-bottom: 50px;
+  color: #272727;
+}
+
+.main-products ul {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.main-products ul li img {
+  width: 100%;
+}
+
+/*-- 서브 상품 리스트 --*/
+.sub-products ul {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  /* grid-template-columns: repeat(2, 1fr); */
+  grid-template-columns: repeat(auto-fill, minmax(160px, max-content));
+  gap: 8px;
+}
+
+.sub-products ul li img {
+  width: 100%;
+}
+
+.sub-products ul li h3 {
+  font-family: 'Abhaya Libre', Georgia, 'Times New Roman', Times, serif;
+  font-weight: 800;
+  font-size: 15px;
+  padding-top: 10px;
+  color: #272727;
+}
+
+.sub-products ul li p {
+  font-size: 12px;
+  padding-top: 5px;
+  padding-bottom: 42px;
+  color: #272727;
+}
+
+.sub-products ul .tutleneck-knit h3 {
+  white-space: nowrap;
+}
+
+/***** footer *****/
+.sub-menu {
+  padding-top: 35px;
+  padding-left: 16px;
+}
+
+.sub-menu li {
+  padding-bottom: 15px;
+  color: #272727;
+  font-size: 11px;
+}
+
+address {
+  padding: 37px 16px 18px 16px;
+  font-size: 10px;
+  color: #898989;
+}
+
+address p {
+  font-style: normal;
+  padding: 3px;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>
+  </title>
+
+  <style>
+    body, html {
+      height: 100%;
+    }
+
+    .video-container {
+      position: relative;
+      width: 100%; height: 100%;
+      overflow: hidden;
+    }
+
+    #video-background {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+    }
+
+    .content {
+      position: relative;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+      z-index:1;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="video">
+      <video autoplay muted loop id="video-background">
+        <source src="./images/video.mp4" type="video/mp4">
+      </video>
+      <div class="content">
+        <h2>over the network</h2>
+        <h2>create new values</h2>
+        <p>고객을 위한 새로운 가치를 만들어 가기 위해</p>
+        <p>팬스타는 먼저 생각하고 움직입니다</p>
+      </div>
+    </div>
+  </header>
+</body>
+</html>

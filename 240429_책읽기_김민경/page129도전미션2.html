@@ -1,0 +1,12 @@
+<body>
+  <h1>배열 객체와 수학 객체를 이용해 다음 코드를 완성해 보세요</h1>
+  <p>점심 시간에 "짜장면", "돈가스", "된장국", "김치찌개", "회덮밥" 중 어떤 메뉴로 할지 선택할지 고민이 된다면 랜덤으로 선택되도록 만들어 보세요</p>
+  <p>1. 배열 객체를 이용하여 메뉴의 5개 데이터를 변수 menu에 참조시키세요.</p>
+  <p>2. Math.random()과 배열 데이터 개수(length)를 이용하여 배열 인덱스값이 랜덤으로 나오도록 하세요.</p>
+  <script>
+    let menu = ["짜장면", "돈가스", "된장국", "김치찌개", "회덮밥"];
+    let menuNum = Math.floor(Math.random() * 5);
+    let result = menu[menuNum];
+    document.body.innerHTML += `<h2>${result}</h2>`
+  </script>
+</body>

@@ -1,0 +1,73 @@
+body {
+  text-align: center;
+}
+
+header, main {
+  height: 500px;
+  background-color: #E5EBB2;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+main { 
+  background-color: #CCF6C8;
+}
+
+/* 대메뉴 */
+nav {
+  position: fixed;
+  background-color: #495464;
+  color: #F4F4F2;
+  width: 100%;
+  top:0;
+  height: 60px;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+nav a {
+  display: block;
+}
+
+nav .global-menu {
+  /* background-color: #FFC100; */
+  display: grid;
+  grid-template-columns: repeat(4, minmax(150px, 200px));
+  justify-content: center;
+}
+
+nav .global-menu li {
+  width: 100%;
+}
+
+nav .global-menu > li > a {
+  height: 60px;
+  line-height: 60px;
+}
+
+nav .global-menu > li > a:hover {
+  background-color: #E8E8E8;
+  color:#495464;
+}
+
+nav .global-menu li ul {
+}
+
+nav .global-menu li .sub-menu {
+  display: none;
+  background-color: #a9adb9;
+  height: 260px
+}
+
+nav .global-menu li .sub-menu li {
+
+}
+
+nav .global-menu li .sub-menu li a {
+  font-weight: normal;
+  line-height: 50px;
+}
+
+nav .global-menu li .sub-menu li a:hover {
+  background-color: #5f6b7c;
+}

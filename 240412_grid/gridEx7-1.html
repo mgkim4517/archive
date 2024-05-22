@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>gridEx7</title>
+
+  <style>
+    ul, li { margin: 0; padding: 0; }
+
+    .container {
+      font-weight: bold;
+      font-size: 1.2rem;
+      border: 1px solid #000;
+      margin: 20px auto;
+      width: 80vw;
+      box-sizing: border-box;
+      padding: 0.8rem;
+      box-shadow: 
+      4px 4px #596e75,
+      7px 7px #64838d,
+      10px 10px #81a2ad,
+      13px 13px #a0b9c2,
+      16px 16px #B3C8CF,
+      19px 19px #ccdee4,
+      22px 22px #e1f0f5;
+    }
+
+    .container .header-box {
+      display: grid;
+      grid-template-columns: 2fr 2fr 3fr;
+      border-bottom: 1px solid #000;
+      padding: 0.8rem;
+      list-style-position: inside;
+      place-items: end start; /* 세로 가로 순서 */
+    }
+
+    .container .list-box {
+      /* background-color: #eee; */
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      /* grid-template-rows: 100px 100px; */
+      gap: 10px;
+      padding: 10px; 
+      /* gap: 10px;
+      padding: 10px; 
+      
+      width: calc(100% - 10px);
+      margin: 5px;
+
+      둘 중 하나 사용 가능
+      */
+    }
+
+    .container .list-box li {
+      color: #6b6b6b;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      /* width: calc(100% - 10px);
+      margin: 5px; */
+      width: 100%;
+      aspect-ratio: 1 / 1;
+    }
+
+    .container .list-box li:nth-child(odd) { background-color: #faffad; }
+    .container .list-box li:nth-child(even) { background-color: #b2dbff; }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <section class="header-box">
+      <ul>
+        <li>list1</li>
+        <li>list2</li>
+        <li>list3</li>
+        <li>list4</li>
+      </ul>
+      <ul>
+        <li>list1</li>
+        <li>list2</li>
+        <li>list3</li>
+        <li>list4</li>
+      </ul>
+      <address>경기도 수원시 팔달구 123456</address>
+    </section>
+    <ul class="list-box">
+      <li>item1</li>
+      <li>item2</li>
+      <li>item3</li>
+      <li>item4</li>
+      <li>item5</li>
+      <li>item6</li>
+    </ul>
+  </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<body>
+  <h1>page127브라우저객체-사용자정보출력</h1>
+  <h2>브라우저 객체 모델을 사용해 운영체제와 스크린 정보 얻기</h2>
+  <script>
+    let info = navigator.userAgent.toLowerCase();
+    let oslmg = null;
+
+    if(info.indexOf('windows') >= 0) {
+      oslmg = "windows.png";
+    } else if(info.indexOf('macintosh') >= 0) {
+      oslmg = "macintosh.png";
+    } else if(info.indexOf('iphone') >= 0) {
+      oslmg = "iphone.png"
+    } else if(info.indexOf('android') >= 0) {
+      oslmg = "android.png";
+    }
+
+    document.write("<img src=\"images/" + oslmg + "\">", "<br>");
+    let scr = screen;
+    let sc_w = scr.width;
+    let sc_h = scr.height;
+
+    document.write("모니터 해상도 너비:" + sc_w + "px", "<br>");
+    document.write("모니터 헤상도 높이:" + sc_h + "px", "<br>");
+  </script>
+</body>

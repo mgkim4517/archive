@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>mqEx3</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+
+  <style>
+    /* 모바일 기준 */
+    body {
+      margin: 0;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    .container {
+      background-color: #9db1ce;
+      gap: 1vw;
+      display: grid;
+      grid-auto-rows: 50px;
+      grid-auto-columns: 150px;
+      grid-template-columns: repeat(2, 1fr);
+      padding: 10%;
+    }
+    .container .txt {
+      background-color: #e0eaff;
+      display: grid;
+      place-items: center;
+    }
+    .container .txt4 {
+      display: none;
+    }
+    /* 768px */
+    @media screen and (min-width: 768px) {
+      .container {
+        background-color: #f5d2dc;
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .container .txt {
+        background-color: #fbffca;
+      }
+      .container .txt10 {
+        display: none;
+      }
+    }
+    /* 1200px */
+    @media screen and (min-width: 1200px)  {
+      .container {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      .container .txt10 {
+        display: grid;
+        background-color: #bacdf1;
+      }
+    }
+    /* wide pc */
+    @media screen and (min-width: 1600px) {
+      .container {
+        grid-template-columns: repeat(5, 1fr);
+      }
+      .container .txt4 {
+        display: grid;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="txt txt1">txt1</div>
+    <div class="txt txt2">txt2</div>
+    <div class="txt txt3">txt3</div>
+    <div class="txt txt4">txt4</div>
+    <div class="txt txt5">txt5</div>
+    <div class="txt txt6">txt6</div>
+    <div class="txt txt7">txt7</div>
+    <div class="txt txt8">txt8</div>
+    <div class="txt txt9">txt9</div>
+    <div class="txt txt10">txt10</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+    /* 모바일 기준 */
+    html {
+      font-size: 18px;
+    }
+    body {
+      margin: 0;
+      text-align: center;
+      word-break: break-all;
+      overflow-wrap: break-word;
+    }
+    h1 {
+      background-color: #580000;
+      color: #fff;
+      font-size: 1.5rem;
+      margin: 0;
+      padding: 30px;
+      transition: 0.4s;
+    }
+    h1 strong {
+      display: block;
+    }
+    h2 {
+      font-size: 1.4rem;
+      background-color: #9e1313;
+      color: #fff;
+      margin: 0;
+      padding: 20px;
+      transition: 0.4s;
+    }
+    .container {
+      font-weight: bold;
+      font-size: 1.1rem;
+      display: grid;
+      grid-auto-rows: 20vh;
+    }
+    .container .box1 { background-color: #e76969; }
+    .container .box2 { background-color: #e99191; }
+    .container .box3 { background-color: #ffc4c4; }
+    /* 768px */
+    @media screen and (min-width: 768px) {
+      html {
+        font-size: 17px;
+      }
+      h1 {
+        background-color: #00471b;
+        padding: 40px;
+      }
+      h1 strong {
+        display: inline;
+      }
+      h2 {
+        background-color: #127237;
+      }
+      .container {
+        width: 70vw;
+        margin: 0 auto;
+      }
+      .container .box1 { background-color: #52af76; }
+      .container .box2 { background-color: #76cc98; }
+      .container .box3 { background-color: #9ff1bf; }
+    }
+    /* 1200px */
+    @media screen and (min-width: 1200px) {
+      h1 {
+        background-color: #00054b;
+        padding: 50px;
+      }
+      h2 {
+        display: none;
+      }
+      .container {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .container .box1 { background-color: #42489e; }
+      .container .box2 { background-color: #797fd3; }
+      .container .box3 { background-color: #afb4f3; }

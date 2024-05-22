@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>요소의실제크기2</title>
+
+  <style>
+    body {
+      /* 어절 기준 줄바꿈. 상속 */
+      word-break: normal;
+      /* 어절에 맞춰 줄바꿈. 영어 한정 */
+      word-break: break-all;
+      /* 어절을 유지하며 줄바꿈. 한글 적용 */
+      word-break: keep-all;
+    }
+
+    .box {
+      font-weight: bold;
+      background-color: #d0d6e6;
+      font-size: 20px;
+    }
+
+    .box1 {
+      background-color: rgb(140, 168, 206);
+      color: #fff;
+      width: 400px;
+      height: 300px;
+      outline: 10px solid rgb(189, 214, 224);
+      margin: 50px auto; 
+    }
+
+    .box2 {
+      border: solid 3px gainsboro;
+      width: 300px;
+      height: 300px;
+      margin: 0 auto;
+      padding-top: 100px; padding-left: 20px;
+    }
+
+    .box3 {
+      background-color: blanchedalmond;
+      outline: skyblue;
+      width: 300px;
+      height: 400px;
+      margin: 20px auto 0;
+      padding: 20px 10px 0 30px;
+    }
+
+    .box4 {
+      background-color: tan;
+      border: dotted 2px tan;
+      border-top: none;
+      width: 400px;
+      height: 200px;
+      outline: plum 30px solid;
+      margin: 20px auto 0;
+      padding: 10px 20px 0 0;
+    }
+
+    .box5 {
+      /*
+      가로 600, 세로 250
+      안쪽 여백 위 아래 50
+      안쪽 여백 좌 우 20
+      테두리 위 10, 오른쪽 5 아래 10 왼쪽 5
+      */
+      width: 600;
+      height: 250;
+      padding: 50px 20px;
+      border: 10px solid #87a5ff;
+      border-right-width: 5px;
+      border-left-width: 5px;
+      color: #4ba06c;
+      background-color: rgb(204, 255, 204);
+    }
+
+    .box6 {
+      /* 
+      가로 150, 세로 200
+      요소 중앙 정렬
+      바깥 여백 위 50
+      안족 여백 위 10, 안쪽 여백 아래 50, 안쪽 여백 오른쪽 50, 안쪽 여백 왼쪽 50
+      테두리 위 10, 아래 5, 왼쪽 4, 오른쪽 4
+      */
+      color: rgb(90, 90, 90);
+      background-color: rgb(210, 210, 255);
+      width: 150px;
+      height: 200px;
+      margin: 50px auto 0;
+      padding: 10px 50px 50px 50px;
+      border: 4px solid rgb(203, 255, 229);
+      border-top-width: 10px;
+      border-bottom-width: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>요소의 실제 크기2</h1>
+  <div class="box box1">
+    <p>너비: w400+m0+m0+p0+p0+b0+b0=400</p>
+    <p>높이: h300+m50+m50+p0+p0+b0+b0=400</p>
+  </div>
+  <div class="box box2">
+    <p>너비: w300+m0+m0+p20+p0+b3+b3=326</p>
+    <p>높이: h300+m0+m0+p100+p0+b3+b3=406</p>
+  </div>
+  <div class="box box3">
+    <p>너비: w300+m0+m0+p10+p30+b0+b0=340</p>
+    <p>높이: h400+m20+m0+p20+p0+b0+b0=440</p>
+  </div>
+  <div class="box box4">
+    <p>너비: w400+m0+m0+p20+p0+b2+b2=424</p>
+    <p>높이: h200+m20+m0+p10+p0+b0+b2=232</p>
+  </div>
+  <div class="box box5">
+    <p>너비: w600+m0+m0+p20+p20+b5+b5=650</p>
+    <p>높이: h250+m0+m0+p50+p50+b10+b10=370</p>
+  </div>
+  <div class="box box6">
+    <p>너비: w150 + m0 + m0 + p50 + p50 + b4 + b4=258</p>
+    <p>높이: h200+m50+m0+p10+p50+b10+b5=325</p>
+    <p>대학이면 종교관은 효과가 같은, 관하여야지 빗나가기 드러나다. 시험에 파김치는 오보에가 모래다 않우. 장애물과 있어서 설명이, 먹거나 교민이 관련이 마련을 설치하다. 하는 이리 고리를 같은 과의 쉽으며 속인 완전히 버팀목은 대하면 합니까. 있습니다 식품이 속이어 분위기의 찌르다 예비다 여행이요 다르다.</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+/*  font-family: "Crete Round", serif; */
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+
+body {
+  font-family: "Create Round", Georgia, 'Times New Roman', Times, serif;
+  font-weight: 500;
+  font-size: 3ch;
+  text-transform: uppercase;
+  background: url(./images/clouds-7050884_1920.jpg) no-repeat fixed 50% / cover;
+  color: #ffffff;
+}
+
+nav .global-menu {
+  /* display: grid; */
+  display: none;
+  /* grid-auto-rows: 40px; */
+}
+
+nav .global-menu .active {
+  display: grid;
+}
+
+nav a {
+  display: block;
+  border-bottom: 1px solid #fff;
+  padding: 10px;
+}
+
+nav .mobile-btn {
+  background: rgba(138, 173, 212, 0.7) url(./images/ellipsis.svg) no-repeat 98% 50% / 10px;
+  /* nav .mobile-btn::after {} */
+}

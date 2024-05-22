@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>flexEx3</title>
+
+  <style>
+    .box1 { background-color: #ffc3c3; }
+    .box2 { background-color: #ffffa1; }
+    .box3 { background-color: #a0ffad; }
+    .box4 { background-color: #a5f2ff; }
+
+    body {
+      margin: 0 auto;
+      padding: 0;
+      font-weight: bold;
+    }
+
+    .wrapper {
+      display: flex;
+    }
+
+    #container1 {
+      flex-direction: column;
+    }
+
+    .box1 {
+      width: 100vw;
+      height: 15vh;
+    }
+
+    .box2 {
+      width: 100vw;
+      height: 5vh;
+    }
+
+    #container2 {
+      flex-direction: row;
+    }
+
+    .box3 {
+      width: 30vw;
+      height: 80vh;
+    }
+
+    .box4 {
+      width: 70vw;
+      height: 80vh;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper" id="container1">
+    <div class="box1">header</div>
+    <div class="box2">nav</div>
+  </div>
+  <div class="wrapper" id="container2">
+    <div class="box3">aside</div>
+    <div class="box4">section</div>
+  </div>
+</body>
+</html>

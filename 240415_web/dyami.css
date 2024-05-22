@@ -1,0 +1,297 @@
+@charset "utf-8";
+
+header {
+  background-color: #fff;
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+}
+
+header h1 img {
+  width: 100px;
+  padding-left: 30px;
+}
+
+header nav img {
+  width: 22px;
+  position: absolute;
+  top: 15px; right: 20px;
+}
+
+header nav ul {
+  display: none;
+}
+
+.box1 {
+  background-color: #7848af;
+  height: 70vh;
+  padding: 50px;
+  display: grid;
+  place-items: center;
+}
+
+.box1 h1 {
+  font-size: 7rem;
+  color: #fff;
+  text-align: center;
+}
+
+.box2 {
+  padding: 30px;
+}
+
+.box2 ul li h3 {
+  font-size: 1.6rem;
+  padding: 20px 0;
+}
+
+.box2 ul li p {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.box2 ul li:last-child p {
+  border-bottom: none;
+}
+
+.box3 {
+  margin: 0 auto;
+}
+
+.box3 ul li {
+  position: relative;
+
+}
+
+.box3 ul li img {
+  width: 100%;
+  margin: auto;
+  display: block;
+}
+
+.box3 ul li h3 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  position: absolute;
+  left:50%; top:50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  width: 100%; height: 100%;
+  display: grid;
+  place-items: center;
+  background-color: rgb(179, 179, 179, 0.6);
+}
+
+.business {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.business h2 {
+  margin: 30px;
+  font-size: 2rem;
+}
+
+.business p {
+  padding-bottom: 30px;
+}
+
+.business ul li h4 {
+  margin: 30px 0 10px 0;
+}
+
+.business ul li p {
+  margin-bottom: 30px;
+}
+
+.business ul li img {
+  width: 456px;
+}
+
+.youtube {
+  background-color: #eee;
+  padding: 20px;
+  margin: 50px auto;
+}
+
+.youtube .youtube-box h2 {
+  font-size: 2rem;
+  padding: 30px 0;
+}
+
+.youtube .youtube-box p {
+  padding-bottom: 70px;
+}
+
+.youtube .video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.service {
+  margin: 100px auto;
+}
+
+.service h2 {
+  text-align: center;
+  font-size: 2rem;
+  padding: 80px 0;
+}
+
+.service .branding .service-box1 {
+  text-align: center;
+}
+
+.service .branding .service-box1 img {
+  width: 80%;
+}
+
+.service .branding .service-box1 h4 {
+  padding: 10px 0 5px 0;
+}
+
+.service .branding .service-contents {
+  display: none;
+}
+
+.location {
+  padding: 30px 20px;
+}
+
+.location h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.location .flex-wrapper {
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.location .flex-wrapper li {
+  width: 70vw; height: 50px;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.location .flex-wrapper li:first-child {
+  border-bottom: 3px solid #000;
+  width: 40vw;
+}
+
+.location .flex-wrapper li:last-child {
+  border-bottom: 1px solid #ddd;
+  width: 40vw;
+}
+
+.location .location-kakao {
+  background-color: #ddd;
+  width: 80vw; height: 400px;
+  margin: 0 auto;
+  aspect-ratio: 3 / 1;
+}
+
+.location .location-kakao #map {
+  aspect-ratio: 3 / 1;
+  border: 1px solid #000;
+  width: 80vw; height: 400px;
+}
+
+.location .address {
+  padding: 50px 0;
+}
+
+.location .address li {
+  margin: 0 auto;
+  padding: 10px;
+  border-bottom: 2px solid #ddd;
+  width: 80vw;
+}
+
+.location .address li:last-child {
+  border-bottom: 4px solid #ddd;
+  width: 80vw;
+}
+
+.talk {
+  height: 500px;
+  text-align: center;
+  background: url(./images/img-bg.jpg) no-repeat 50% 50%;
+}
+
+.talk .talk-box {
+  background-color: rgba(47, 224, 195, 0.7);
+  height: 500px;
+  color: #fff;
+  padding-top: 60px;
+}
+
+.talk .talk-box h3 {
+  font-size: 2rem;
+}
+
+.talk .talk-box p {
+  width: 60vw;
+  margin: 80px auto;
+  font-size: 1.3em;
+}
+
+.talk .talk-box .btn {
+  border: 2px solid #fff;
+  width: 130px; height: 40px;
+  line-height: 32px;
+}
+
+.talk .talk-box .btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+footer {
+  background-color: #cfcfcf;
+  height: 200px;
+  padding: 80px 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+footer address {
+  font-style: normal;
+}
+
+.container {
+  background-color: #eee;
+}
+
+.container .logo {
+  width: 100px;
+  margin: 50px 0 100px 30px;
+}
+
+.container .contents {
+  margin-left: 30px;
+}
+
+.container .contents .location {
+  padding: 0;
+}
+
+.container .contents .social .sns li img {
+  height: 20px;
+  margin-right: 40px;
+}
+
+.container .contents .social .sns {
+  display: flex;
+  padding: 20px;
+}
+
+.container .contents .contact h4, .container .contents .location h4, .container .contents .social h4 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-top: 70px;
+  margin-bottom: 20px;
+}

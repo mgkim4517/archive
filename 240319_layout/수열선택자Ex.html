@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>수열선택자Ex</title>
+
+  <style>
+    /* 
+    마우스 이벤트
+    1, 5, 9 같은 색상
+    2, 4, 6, 8 같은 색상
+    3, 7 같은 색상
+    */
+    body {
+      text-align: center;
+      font-weight: bold;
+    }
+    
+    .gnb {
+      list-style: none;
+      padding: 0; margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+    
+    .gnb li {
+      background-color: #d1e2ff;
+      width: 70px; height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .gnb li a {
+      text-decoration: none;
+      color: #000;
+      display: block;
+      width: 70px; height: 50px;
+      line-height: 50px;
+    }
+
+    .gnb li a:hover {
+      background-color: #93d1a8;
+      color: #fff;
+    }
+
+    .box1 a:hover {
+      border-radius: 30px 0 0 30px;
+    }
+
+    .box2 a:hover {
+      border-radius: 0 30px 30px 0;
+    }
+
+    .gnb li:first-child {
+      border-radius: 30px 0 0 30px;
+    }
+
+    .gnb li:last-child {
+      border-radius: 0 30px 30px 0;
+    }
+
+    .gnb li:nth-child(4n+1) {
+      background-color: #ffd8e4;
+    }
+
+    .gnb li:nth-child(even) {
+      background-color: #f9ffc8;
+    }
+  </style>
+</head>
+
+<body>
+  <ul class="gnb">
+    <li class="box1"><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#">6</a></li>
+    <li><a href="#">7</a></li>
+    <li><a href="#">8</a></li>
+    <li class="box2"><a href="#">9</a></li>
+  </ul>
+</body>
+</html>

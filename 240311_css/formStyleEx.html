@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>homeStyleEx</title>
+
+  <style>
+    body {
+      font-family: '나눔고딕', '맑은고딕', 돋움, sans-serif;
+    }
+
+    form {
+      background-color: wheat;
+      width: 500px;
+      height: 200px;
+      padding: 10px;
+    }
+    fieldset {
+      border: 3px solid pink;
+      border-radius: 20px;
+      text-align: right;
+      background-color: #fff;
+    }
+    
+    legend {
+      background-color: bisque;
+      color: darkorange;
+      font-size: 32px;
+      border-radius: 20px;
+      text-align: left;
+      padding: 5px 20px;
+    }
+
+    input {
+      border: none;
+      border-bottom: 1px solid #222;
+    }
+
+    p {
+      color: darkblue;
+    }
+
+    button {
+      border: none;
+      color: rgb(17, 10, 114);
+      background-color: rgb(203, 217, 255);
+      padding: 5px 10px 5px 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <form>
+    <fieldset>
+      <legend>회원가입</legend>
+      <p><label for="userName">이름:</label>
+        <input type="text" id="user_name"></p>
+      <p><label for="userEmail">이메일: </label>
+        <input type="text" id="user_email"></p>
+        <button type="submit" value="가입">가입</button>
+        <button type="reset" value="취소">취소</button>
+    </fieldset>
+  </form>
+</body>
+</html>

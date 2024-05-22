@@ -1,0 +1,17 @@
+<body>
+  <h1>forEx4</h1>
+  <script>
+    // 2~9단 출력
+    let result = '';
+    for(let i = 2; i <= 9; i++) { //2~9단
+      // document.write(`<h3>-- ${i}단 --<h3>`);
+        result += `<h3>-- ${i}단 --<h3>`;
+
+      for(let k = 1; k <= 9; k++) { // * 1~9
+        result += `${i} * ${k} = ${i * k}<br>`;
+      }
+
+    }
+    document.body.innerHTML = result;
+  </script>
+</body>

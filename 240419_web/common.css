@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+:root {
+  --font-title-lg: 2.5rem;
+  --font-title-sm: 1rem;
+
+  --bg-color-lightgray: #e6e6e6;
+  --border-color: #c7cfe0;
+
+  --color-pink: #ffe6e6;
+  --color-yellow: #fffbd7;
+  --color-green: #e2ffd9;
+  --color-blue: #d9edff;
+}
+
+.padding-md {
+  padding: 20px 10px 15px;
+}
+
+.padding-sm {
+  padding: 0 10px;
+}
+
+body {
+  margin: 50px auto;
+}
+
+h2 {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.box {
+  border: 1px solid var(--border-color);
+  margin: 0 auto;
+  width: 100%;
+}

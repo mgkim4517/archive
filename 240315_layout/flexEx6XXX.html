@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>flexEx6</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-weight: bold;
+    }
+
+    form {
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      height: 5vh;
+    }
+    
+    form .box1 {
+      color: #fff;
+      background-color: darkblue;
+      width: 7vw;
+    }
+
+    form .box2 {
+      background-color: #8fcfba;
+      width: 88vw;
+      text-align: left;
+    }
+
+    form .box3 {
+      background-color: #84f5c0;
+      width: 5vw;
+    }
+  </style>
+</head>
+
+<body>
+  <form>
+      <div class="box1">로고</div>
+      <div class="box2">
+        <input type="text"><button type="submit">검색</button>
+      </div>
+      <div class="box3">메뉴</div>
+  </form>
+</body>
+</html>

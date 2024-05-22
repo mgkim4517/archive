@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+body {
+  font-family: 'Pretendard', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  width: 100%;
+}
+
+/* 상품 이미지 */
+main {
+  position: relative;
+}
+
+main .menu-container, main .product-container, main .order-container, main .info-container {
+  padding: 0 16px;
+}
+
+main .menu-container .sub-menu {
+  position: absolute;
+  bottom: 0;
+}
+
+main .product-container {
+  overflow: hidden;
+  padding-top: 65px;
+}
+
+main .product-container .img-wrapper {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+main .product-container .img-wrapper li {
+  scroll-snap-align: start;
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+main .product-container .img-wrapper li img {
+  width: 100%;
+}
+
+main .product-container .pc-delivery-box {
+  display: none;
+}
+
+main .order-container .info-box {
+  font-family: 'Abhaya Libre', Georgia, 'Times New Roman', Times, serif;
+  padding-top: 30px;
+}
+
+main .order-container .info-box .clothe-num {
+  font-size: 14px;
+  color: #272727;
+}
+
+main .order-container .info-box h2 {
+  font-weight: 800;
+  font-size: 20px;
+  padding: 4px 0 2px 0;
+  color: #171717;
+}
+
+main .order-container .info-box .price {
+  font-size: 16px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #DEDEDE;
+  color: #272727;
+}
+
+main .order-container .pc-info-box1,
+main .order-container .pc-info-box2,
+main .order-container .pc-return-box,
+main .order-container .pc-delivery-box {
+  display: none;
+}
+
+main .order-container .choice-color {
+  display: none;
+}
+
+main .order-container .drop-color {
+  font-family: 'Abhaya Libre', Georgia, 'Times New Roman', Times, serif;
+  margin: 30px 0;
+  border: none;
+  width: 100%;
+  font-size: 20px;
+  color: #272727;
+}
+
+main .order-container hr {
+  border: 1px solid #DEDEDE;
+}
+
+main .order-container .drop-size {
+  font-family: 'Abhaya Libre', Georgia, 'Times New Roman', Times, serif;
+  margin: 30px 0 50px 0;
+  border: none;
+  width: 100%;
+  font-size: 20px;
+  color: #272727;
+}
+
+main .order-container button {
+  font-family: 'Abhaya Libre', Georgia, 'Times New Roman', Times, serif;
+  background-color: #374B3F;
+  color: #FFF9EC;
+  width: 100%;
+  height: 60px;
+  border: none;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+main .order-container .add-btn {
+  margin: 30px 0;
+}
+
+/* 상품 정보 */
+main .info-container {
+  margin-top: 50px;
+}
+
+main .info-container .info-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 12px;
+}
+
+main .info-cotainer .mobile-info-box .info-toggle h2 {
+  color: #171717;
+  font-size: 16px;
+}
+
+main .info-container .mobile-info-box p, main .info-container .mobile-delivery-box p, main .info-container .mobile-return-box p {
+  font-size: 12px;
+  padding: 5px;
+}
+
+.info-container hr {
+  margin: 30px 0;
+  border: 1px solid #DEDEDE;
+}

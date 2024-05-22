@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+body {
+  font-family: '나눔고딕', '맑은 고딕', 돋움, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.title {
+  color: lightgoldenrodyellow;
+  background-color: pink;
+  border-radius: 20px 20px 0 0;
+  border-bottom: 5px solid rgb(255, 135, 161);
+  padding: 10px;
+  width: 500px;
+  width: 60%;
+  min-width: 400px; /* 최소 가로값이 400px은 유지 */
+  margin: 50px auto;
+}
+
+h2 {
+  text-decoration: line-through;
+  margin-top: 20px;
+  /* background-color: #ddd; */
+}
+
+.list li {
+  border: 1px solid #000;
+  padding: 4px;
+  width: 300px;
+  /* margin: 0 auto
+  margin-bottom: 1px; */
+  margin: 0 auto 4px;
+  text-align: left;
+}
+
+.url {
+  background-color: rgb(193, 197, 255);
+  width: 60%;
+  min-width: 300px; /* 300px 이하로는 작아지지 않음. 최소 크기 300 유지 */
+  padding: 10px;
+  margin: 0 auto 1px; /* top right+left bottom */
+}
+
+.url a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.url:hover {
+  background-color: rgb(0, 14, 139);
+}
+
+.wrapper {
+  width: 600px;
+  min-width: 300px;
+  margin: 50px auto;
+}
+
+.wrapper .site {
+  background-color: rgb(190, 255, 195);
+  border-bottom: 1px solid #fff;
+  height: 40px;
+  line-height: 40px;
+  /* 
+  "한 줄인 경우" 세로 중앙 정렬 방법
+  height와 line-height의 값을 동일하게 적용
+  폰트 사이즈의 크기가 큰 경우는 잘 안 됨
+  */
+}

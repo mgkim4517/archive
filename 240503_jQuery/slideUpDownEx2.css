@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+ul li {
+  width: 400px;
+}
+
+ul li h3 a {
+  background-color: #6096B4;
+  color: #EEE9DA;
+  height: 50px;
+  font-size: 1.5rem;
+  line-height: 50px;
+  padding-left: 20px;
+  border-bottom: 1px solid #fff;
+  display: block;
+}
+
+ul li p {
+  background-color: #FEFCF3;
+  color: #68605b;
+  height: 300px;
+  padding: 20px;
+  font-size: 1.2rem;
+  display: none;
+  text-align: center;
+  padding-top: 90px;
+}
+
+ul li h3 a:hover {
+  background-color: #EEE9DA;
+  color: #6096B4;
+}
