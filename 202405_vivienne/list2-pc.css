@@ -3,18 +3,23 @@
 @media screen and (min-width: 768px) {
   main {
     display: flex;
-    padding: 50px 0 0 18px;
+    padding: 30px 0 0 18px;
   }
 
   main .menu-container {
     position: relative;
     display: block;
-    max-width: 280px;
+    width: 15%;
     min-width: 130px;
   }
 
   /* 상품 리스트 */
   /* 메인 상품 */
+  main .product-list {
+    width: 85%;
+    padding-left: 0;
+  }
+
   main .product-list .main-products ul {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
@@ -25,6 +30,11 @@
     font-size: 20px;
     padding-top: 15px;
     padding-bottom: 5px;
+  }
+
+  main .product-list .main-products ul li h3 a:hover {
+    text-decoration-line: underline;
+    text-decoration-color: #3a3a3a;
   }
 
   main .product-list .main-products ul li p {

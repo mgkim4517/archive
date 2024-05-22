@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <title>sub3</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+
+  <style>  
+    .product-container {
+      position: relative;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      overflow: hidden;
+    }
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .swiper-paggination {
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      position: absolute;
+      z-index: 999;
+    }
+  </style>
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./favicon1.ico" type="image/x-icon">
+  <!-- open graph -->
+
+  <!-- reset -->
+  <link rel="stylesheet" href="./assets/styles/reset.css">
+  <!-- fonts -->
+  <link rel="stylesheet" href="./assets/styles/font.css">
+  <!-- plugIn style -->
+  <link rel="stylesheet" href="./assets/aa/swiper-bundle.min.css">
+  <!-- 공통된 style -->
+  <link rel="stylesheet" href="./layout2.css">
+  <!-- 이 페이지만의 style -->
+  <link rel="stylesheet" href="./sub3.css">
+  <!-- 이 페이지만의 pc style -->
+  <link rel="stylesheet" href="./sub3-pc.css">
+  <!-- jq -->
+  <script src="./assets/jquery-3.7.1.min.js"></script>
+  <script src="./assets/aa/swiper-bundle.min.js"></script>
+  <script defer src="./swiper.js"></script>
+  <!-- plugIn js -->
+  <!-- 공통된 js -->
+  <script defer src="./list2.js"></script>
+</head>
+
+<body>
+  <section class="product-container imgSwiper">
+    <ul class="swiper-wrapper">
+      <li class="swiper-slide"><img src="./images/clothes1-5.jpg" alt="분홍색 옷 앞면 피팅"></li>
+      <li class="swiper-slide"><img src="./images/clothes1-6.jpg" alt="분홍색 옷 뒷면 피팅"></li>
+      <li class="swiper-slide"><img src="./images/clothes1-1.jpg" alt="분홍색 옷 앞면"></li>
+      <li class="swiper-slide"><img src="./images/clothes1-2.jpg" alt="분홍색 옷 뒷면"></li>
+      <li class="swiper-slide"><img src="./images/clothes1-3.jpg" alt="파란색 옷 앞면"></li>
+      <li class="swiper-slide"><img src="./images/clothes1-4.jpg" alt="파란색 옷 뒷면"></li>
+    </ul>
+    <div class="swiper-paggination"></div>
+  </section>
+
+  <script>
+    let swiper = new Swiper(".imgSwiper", {
+      slidesPerView: 1,
+      loop: true,
+      pagination: {
+        el: ".swiper-paggination",
+        clickable: true,
+      }
+    })
+  </script>
+</body>
+
+</html>

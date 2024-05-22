@@ -46,10 +46,10 @@ main .menu-container {
   width: 100%;
   position: fixed;
   top: 50px;
+  z-index: 9999;
 }
 
 main .menu-container .main-menu {
-  background-color: #fff;
   font-weight: 500;
   display: none;
 }

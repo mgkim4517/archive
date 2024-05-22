@@ -5,13 +5,13 @@
     display: flex;
   }
   main {
-    padding: 50px 18px 0 18px;
+    padding: 30px 18px 0 18px;
   }
 
   main .menu-container {
     position: relative;
     display: block;
-    max-width: 280px;
+    width: 15%;
     min-width: 130px;
   }
 

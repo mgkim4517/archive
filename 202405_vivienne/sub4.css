@@ -7,18 +7,43 @@ body {
 
 /* 메인 */
 /* 상품 이미지 */
-main .product-container {
+main .pc-product-container {
+  display: none;
+}
+
+main .test-box {
   padding: 60px 15px 0 15px;
 }
 
-main .product-container .img-wrapper {
-  display: flex;
-  width: 600%;
+main .test-box .product-container {
+  position: relative;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
 }
 
-main .product-container .img-wrapper li img {
+main .test-box .product-container .swiper-wrapper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .test-box .product-container .swiper-wrapper .swiper-slide img {
+  display: block;
   width: 100%;
-  overflow: hidden;
+  height: 100%;
+  object-fit: cover;
+}
+
+main .test-box .product-container .swiper-paggination {
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 9;
 }
 
 /* 구매 영역 */

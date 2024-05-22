@@ -35,6 +35,9 @@ main .product-list .main-products ul li p {
 main .product-list .main-products ul li .knitwear2 {
   display: none;
 }
+main .product-list .main-products ul li .t-shirt2 {
+  display: none;
+}
 
 /* 서브 상품 리스트 */
 main .product-list .sub-products ul {
