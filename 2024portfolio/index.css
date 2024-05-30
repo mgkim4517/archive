@@ -11,7 +11,7 @@ header .gnb {
 
 /***** main *****/
 main {
-  padding: 0 62px;
+  /* padding: 0 62px; */
 }
 
 /*** main-container ***/
@@ -19,12 +19,11 @@ main .main-container {
   position: relative;
   width: 100%;
   height: 100vh;
-  background-color: #ffefd1;
 }
 
 main .main-container .main-top {
   position: absolute;
-  top: 70px; right: 0;
+  top: 70px; right: 62px;
 }
 
 main .main-container .main-center {
@@ -36,7 +35,7 @@ main .main-container .main-center {
 
 main .main-container .main-bottom {
   position: absolute;
-  bottom: 70px; left: 0;
+  bottom: 70px; left: 62px;
 }
 
 main .main-container .main-desc {
@@ -66,40 +65,59 @@ main .main-container .main-desc .third-desc {
 
 /*** about-container ***/
 main .about-container {
-  width: 100%; height: 100vh;
-  padding-top: 80px;
-  background-color: #ffd8d8;
+  /* background-color: #ffd8d8; */
+  width: 100%;
+  height: 100vh;
+  /* padding: 100px 0; */
 }
 
-main .about-container h2,
+main .about-container .about-box {
+  width: 100%; height: 100%;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  place-items: center;
+}
+
 main .about-container .about-box h2 {
   font-family: var(--primary-font-en2);
   color: var(--list-color3);
   font-size: var(--title-size-md);
 }
 
-main .about-container h2 {
-  text-align: center;
+main .about-container .about-box .about-text {
+  padding-top: 100px;
 }
 
-main .about-container .about-box {
+main .about-container .about-box .test {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 100px 0 100px;
 }
 
-main .about-container .about-box .intro-box {
+main .about-container .about-box .test .me-text {
+  padding-right: 400px;
+  padding-bottom: 100px;
+  white-space: nowrap;
+}
+
+main .about-container .about-box .test .intro-box {
+  padding-right: 100px;
   text-align: right;
+  white-space: nowrap;
+  padding-bottom: 100px;
+}
+
+main .about-container .about-box .test .intro-box .intro-tag-box {
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* slide-text */
 main .slide-text {
-  padding: 0;
 }
 
 main .slide-text h2 {
-  background-color: var(--list-color3);
+  background-color: var(--list-color6);
   color: var(--list-color5);
   font-size: var(--desc-size-md);
   padding: 21px 0;
@@ -108,14 +126,13 @@ main .slide-text h2 {
 
 /*** skill-container ***/
 main .skill-container {
-  background-color: #cffffd;
   width: 100%; height: 100vh;
 }
 
 
 main .skill-container .skill-box {
   display: grid;
-  grid-template-columns: 710px 710px;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 346px 346px;
   gap: 30px;
   place-content: center;
